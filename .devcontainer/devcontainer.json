@@ -1,0 +1,19 @@
+{
+    "name": "mr-covax's OOP lab repository",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "postCreateCommand": "apt-get update && apt-get install -y cmake && git config --global --add safe.directory '*'"
+}
